@@ -1,10 +1,12 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import Button from '@material-ui/core/Button';
 
 function Menu() {
       return (
-            <div>
-                  <h1>Soy Menú</h1>
-            </div>
+            <Button variant="contained" color="primary">
+                  Hola Mundo!
+            </Button>
       );
 }
 
