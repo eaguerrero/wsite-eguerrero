@@ -24,7 +24,7 @@ class Home extends React.Component {
     changeComponent() {
         return (
             <div>
-            HOLA
+                HOLA
             </div>
             )
         }

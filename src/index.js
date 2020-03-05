@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App';
+import Navigation from './components/Navigation';
 import Home from './views/Home';
 import About from './views/About';
 import * as serviceWorker from './serviceWorker';
@@ -22,16 +24,18 @@ import {
 
 export default function BasicExample() {
   return (
+
     <Router>
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/about">
-                <About/>
-          </Route>
           <Route path="/dashboard">
-
+            <App/>
+          </Route>
+          
+          <Route path="/about">
+            <About/>
           </Route>
         </Switch>
     </Router>
@@ -39,6 +43,7 @@ export default function BasicExample() {
 }
 
 ReactDOM.render(<BasicExample />, document.getElementById('root'))
+ReactDOM.render(<Menu/>, document.getElementById('menu'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
